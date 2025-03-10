@@ -33,6 +33,23 @@ const data = {
       href: '/page/help',
     },
   ],
+
+  carousels: [
+    {
+      title: 'Best Sellers in T-Shirts',
+      buttonCaption: 'Shop Now',
+      image: '/images/2.jpg',
+      url: '/search?category=T-Shirts',
+      isPublished: true,
+    },
+    {
+      title: 'Best Deals on Wrist Watches',
+      buttonCaption: 'See More',
+      image: '/images/1.jpg',
+      url: '/search?category=Wrist Watches',
+      isPublished: true,
+    },
+  ],
 }
 
 export default data
