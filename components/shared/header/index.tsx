@@ -9,7 +9,7 @@ import Search from './search'
 
 export default function Header() {
   return (
-    <header className='bg-black  text-white'>
+    <header className='bg-blue-950  text-white'>
       <div className='px-2'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center'>
@@ -19,8 +19,8 @@ export default function Header() {
             >
               <Image
                 src='/icons/logo.svg'
-                width={40}
-                height={40}
+                width={100}
+                height={100}
                 alt={`${APP_NAME} logo`}
               />
               {APP_NAME}
@@ -31,14 +31,14 @@ export default function Header() {
           </div>
           <Menu />
         </div>
-        <div className='md:hidden block py-2'>
+        <div className='md:hidden block py-7'>
           <Search />
         </div>
       </div>
-      <div className='flex items-center px-3 mb-[1px]  bg-gray-800'>
+      <div className='flex items-center px-3 mb-[1px]  bg-red-500'>
         <Button
           variant='ghost'
-          className='header-button flex items-center gap-1 text-base [&_svg]:size-6'
+          className='dark *:header-button flex items-center gap-1 text-base [&_svg]:size-6'
         >
           <MenuIcon />
           All
