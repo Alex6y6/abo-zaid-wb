@@ -64,6 +64,7 @@ export default async function HomePage() {
       { image: '/images/banner1.jpg', alt: 'Banner 1' },
       { image: '/images/banner2.jpg', alt: 'Banner 2' },
     ]
+    const bestSellingProducts = await getProductsByTag({ tag: 'best-seller' })
     const todaysDeals = await getProductsByTag({ tag: 'todays-deal' })
     return (
       <>
@@ -73,6 +74,15 @@ export default async function HomePage() {
           <Card className='w-full rounded-none'>
             <CardContent className='p-4 items-center gap-3'>
               <ProductSlider title={"Today's Deals"} products={todaysDeals} />
+            </CardContent>
+          </Card>
+          <Card className='w-full rounded-none'>
+            <CardContent className='p-4 items-center gap-3'>
+              <ProductSlider
+                title='Best Selling Products'
+                products={bestSellingProducts}
+                hideDetails
+              />
             </CardContent>
           </Card>
         </div>
