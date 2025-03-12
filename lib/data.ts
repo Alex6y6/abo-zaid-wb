@@ -4,30 +4,33 @@ import { toSlug } from './utils'
 const products: IProductInput[] = [
   // T-Shirts
   {
-    name: 'Nike Mens Slim-fit Long-Sleeve T-Shirt',
-    slug: toSlug('Nike Mens Slim-fit Long-Sleeve T-Shirt'),
-    category: 'T-Shirts',
-    images: ['/images/p11-1.jpg', '/images/p11-2.jpg'],
-    tags: ['new-arrival'],
+    name: "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes",
+    slug: toSlug(
+      "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes"
+    ),
+    category: 'Shoes',
+    brand: 'Generic',
+    images: ['/images/3.jpg', '/images/4.jpg'],
+    tags: ['best-seller', 'todays-deal'],
     isPublished: true,
-    price: 21.8,
-    listPrice: 0,
-    brand: 'Nike',
-    avgRating: 4.71,
-    numReviews: 7,
+    price: 32.99,
+    listPrice: 80,
+    avgRating: 3.46,
+    numReviews: 13,
     ratingDistribution: [
-      { rating: 1, count: 0 },
-      { rating: 2, count: 0 },
-      { rating: 3, count: 0 },
-      { rating: 4, count: 2 },
-      { rating: 5, count: 5 },
+      { rating: 1, count: 1 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 3 },
     ],
-    numSales: 9,
-    countInStock: 11,
+    countInStock: 46,
+    numSales: 48,
     description:
-      'Made with chemicals safer for human health and the environment',
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    colors: ['Green', 'Red', 'Black'],
+      'Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh',
+    sizes: ['8', '9', '10', '11'],
+    colors: ['Green', 'Black', 'Grey'],
+
     reviews: [],
   },
 
