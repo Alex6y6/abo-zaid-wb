@@ -1,8 +1,6 @@
 'use server'
-
+import Product, { IProduct } from '@/lib/db/models/product.model'
 import { connectToDatabase } from '@/lib/db'
-import product from '@/lib/db/models/product.model'
-
 export async function getAllCategories() {
   await connectToDatabase()
   const categories = await Product.find({ isPublished: true }).distinct(
@@ -34,8 +32,6 @@ export async function getProductsForCard({
     image: string
   }[]
 }
-
-import Product, { IProduct } from '@/lib/db/models/product.model'
 import { PAGE_SIZE } from '../constants'
 // GET PRODUCTS BY TAG
 export async function getProductsByTag({
