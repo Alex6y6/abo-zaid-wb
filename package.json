@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "email": "email dev",
     "seed": "npx tsx ./lib/db/seed.ts",
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -41,11 +42,22 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@paypal/react-paypal-js": "^8.8.2",
+    "@react-email/components": "^0.0.33",
     "@tailwindcss/postcss": "^4",
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "add": "^2.0.6",
+    "badge": "^1.0.3",
+    "i": "^0.3.7",
+    "npm": "^11.2.0",
+    "npx": "^10.2.2",
+    "react-email": "^3.0.7",
+    "resend": "^4.1.2",
+    "shadcn": "^2.4.0-canary.14",
+    "table": "^6.9.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
